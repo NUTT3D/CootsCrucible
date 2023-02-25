@@ -1,0 +1,907 @@
+{
+  "associatedLayout": "Battlefield",
+  "lastChangeTimeStamp": 0,
+  "name": "NewPassives",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isLevelUP",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NewPassiveSelectionIndex",
+            "=",
+            "Random(VariableChildCount(NewPassives)-1)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NewPassiveSelection",
+            "=",
+            "Variable(NewPassives[Variable(NewPassiveSelectionIndex)])"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "MissingPassives",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "NewPassiveSelection",
+                "=",
+                "12"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NewPassiveSelection",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Passive_Projectiles",
+                "190",
+                "153",
+                "\"GUI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NewPassiveSelection",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Passive_Damage",
+                "190",
+                "153",
+                "\"GUI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NewPassiveSelection",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Passive_ExpGain",
+                "190",
+                "153",
+                "\"GUI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NewPassiveSelection",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Passive_PickUpRadius",
+                "190",
+                "153",
+                "\"GUI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NewPassiveSelection",
+                "=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Passive_MaxHP",
+                "190",
+                "153",
+                "\"GUI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NewPassiveSelection",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Passive_MoveSpeed",
+                "190",
+                "153",
+                "\"GUI\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Base Passives",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Passive_Projectiles",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "Level",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableRemoveAt"
+          },
+          "parameters": [
+            "NewPassives",
+            "Variable(NewPassiveSelectionIndex)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NumberofPassives",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "MissingPassives",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ToggleSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isLevelUP"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "Coots",
+            "ExtraProjectiles",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Coots",
+            "hasExtraProjectilePassive",
+            "True"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Passive_Damage",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "Level",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableRemoveAt"
+          },
+          "parameters": [
+            "NewPassives",
+            "Variable(NewPassiveSelectionIndex)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NumberofPassives",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "MissingPassives",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ToggleSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isLevelUP"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "Coots",
+            "AllDamage",
+            "+",
+            ".05"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Coots",
+            "hasAllDamage",
+            "True"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Passive_ExpGain",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "Level",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableRemoveAt"
+          },
+          "parameters": [
+            "NewPassives",
+            "Variable(NewPassiveSelectionIndex)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NumberofPassives",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "MissingPassives",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ToggleSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isLevelUP"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "Coots",
+            "ExpGain",
+            "+",
+            ".05"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Coots",
+            "hasExpGain",
+            "True"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Passive_PickUpRadius",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "Level",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableRemoveAt"
+          },
+          "parameters": [
+            "NewPassives",
+            "Variable(NewPassiveSelectionIndex)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NumberofPassives",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "MissingPassives",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ToggleSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isLevelUP"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "Coots",
+            "PUR",
+            "+",
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Coots",
+            "hasPickUpRadius",
+            "True"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Passive_MaxHP",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "Level",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableRemoveAt"
+          },
+          "parameters": [
+            "NewPassives",
+            "Variable(NewPassiveSelectionIndex)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NumberofPassives",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "MissingPassives",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ToggleSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isLevelUP"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "Coots",
+            "MaxHealth",
+            "+",
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Coots",
+            "hasMaxHP",
+            "True"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Passive_MoveSpeed",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "Level",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableRemoveAt"
+          },
+          "parameters": [
+            "NewPassives",
+            "Variable(NewPassiveSelectionIndex)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "NumberofPassives",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "MissingPassives",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ToggleSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isLevelUP"
+          ]
+        },
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Coots",
+            "TopDownMovement",
+            "+",
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Coots",
+            "hasMoveSpeed",
+            "True"
+          ]
+        }
+      ]
+    }
+  ]
+}

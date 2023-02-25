@@ -1,0 +1,2097 @@
+{
+  "firstLayout": "StartScreen",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "7e3167c1-7b53-4259-9a3e-bc1477b4f7e9",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Coots Crucible",
+    "description": "Can you survive 10 minutes as an adorable cat? Made for in 9 days for #LudwigJam 2023.",
+    "author": "",
+    "windowWidth": 640,
+    "windowHeight": 360,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "android-icon-144.png",
+      "android-icon-192": "android-icon-192.png",
+      "android-icon-36": "android-icon-36.png",
+      "android-icon-48": "android-icon-48.png",
+      "android-icon-72": "android-icon-72.png",
+      "android-icon-96": "android-icon-96.png",
+      "android-windowSplashScreenAnimatedIcon": "android-windowSplashScreenAnimatedIcon.png",
+      "desktop-icon-512": "desktop-icon-512.png",
+      "ios-icon-100": "ios-icon-100.png",
+      "ios-icon-1024": "ios-icon-1024.png",
+      "ios-icon-114": "ios-icon-114.png",
+      "ios-icon-120": "ios-icon-120.png",
+      "ios-icon-144": "ios-icon-144.png",
+      "ios-icon-152": "ios-icon-152.png",
+      "ios-icon-167": "ios-icon-167.png",
+      "ios-icon-180": "ios-icon-180.png",
+      "ios-icon-20": "ios-icon-20.png",
+      "ios-icon-29": "ios-icon-29.png",
+      "ios-icon-40": "ios-icon-40.png",
+      "ios-icon-50": "ios-icon-50.png",
+      "ios-icon-57": "ios-icon-57.png",
+      "ios-icon-58": "ios-icon-58.png",
+      "ios-icon-60": "ios-icon-60.png",
+      "ios-icon-72": "ios-icon-72.png",
+      "ios-icon-76": "ios-icon-76.png",
+      "ios-icon-80": "ios-icon-80.png",
+      "ios-icon-87": "ios-icon-87.png",
+      "liluo-thumbnail": "Coot_Survivors_Itch.png"
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "Plug.png",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [
+      "jZUeX80eqadzJxIFrK2tBPkocbw2"
+    ],
+    "authorUsernames": [
+      "NUTT3D"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "Battlefield.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Battlefield.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lud.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Lud",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lud2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Lud2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lud3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Lud3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lud4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Lud4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/GoldGem.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "GoldGem",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/PickUpSFX.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 14\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.07,\\\"sustainPunch\\\":0,\\\"decay\\\":0.12,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":400,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":15,\\\"frequencyJump1Amount\\\":55,\\\"frequencyJump2Onset\\\":40,\\\"frequencyJump2Amount\\\":55,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":95,\\\"squareDutySweep\\\":-25,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"PickUpSFX\"}}",
+        "name": "PickUpSFX",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CatClaw5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CatClaw5",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CatClaw6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CatClaw6",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CatClaw7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CatClaw7",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CatClaw8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CatClaw8",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Framed Pixel Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Framed Pixel Red Fill Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Framed Pixel Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/ed31faa46e5c04883605d72470e0f3bfe1c2e679dc6a4a632ab03e105866ff8b_Framed Pixel Red Fill Bar.png",
+          "name": "Framed Pixel Red Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "xpbar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "xpbar.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "kongtext.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "kongtext.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "NES_White.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "NES_White.fnt",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NES_White.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"NES_White.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NES_White.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LevelUpScreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LevelUpScreen.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Nippon.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Nippon",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite22",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite23",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coots.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Coots",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coots2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Coots2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coots3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Coots3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coots4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Coots4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Flat Bar Red Fill Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Flat Bar Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
+          "name": "Flat Bar Red Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar White Border.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Flat Bar White Border.png2.png\"}",
+        "name": "Flat Bar White Border.png2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar Red Fill.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Flat Bar Red Fill.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Spawn.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Spawn",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Spawn2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Spawn2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Spawn3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Spawn3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Spawn4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Spawn4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop5",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop6",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop7",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ChestHole_Loop8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ChestHole_Loop8",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite24",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Sniper.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Sniper.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Purupuru.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Purupuru.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_NipponDesu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_NipponDesu.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_NamiStatue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_NamiStatue.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Chesthole.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Chesthole.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "MusicNotes3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "MusicNotes3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite26",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/EnemyHit.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 14\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.04391629074340386,\\\"sustainPunch\\\":100,\\\"decay\\\":0.01249364522380958,\\\"tremoloDepth\\\":57,\\\"tremoloFrequency\\\":3.713443993936491,\\\"frequency\\\":228.84251032643326,\\\"frequencySweep\\\":-186.47604602720563,\\\"frequencyDeltaSweep\\\":-1.3039724563482866,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":1,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"breaker\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":4100,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"EnemyHit\"},\"localFilePath\":\"assets/EnemyHit.wav\"}",
+        "name": "EnemyHit",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Passives_Projectile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Passives_Projectile.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Passives_AllDamage.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Passives_AllDamage.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Passives_ExpGain.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Passives_ExpGain.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Passives_PickUpRadius.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Passives_PickUpRadius.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Passives_MaxHP.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Passives_MaxHP.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Passives_MoveSpeed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Passives_MoveSpeed.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_CootsClaws_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_CootsClaws_12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_CootsClaws_22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_CootsClaws_22.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_CootsClaws_32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_CootsClaws_32.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_Chesthole_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_Chesthole_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_Chesthole_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_Chesthole_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_Chesthole_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_Chesthole_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_NipponDesu_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_NipponDesu_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_NipponDesu_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_NipponDesu_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_NipponDesu_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_NipponDesu_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_PuruPuru_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_PuruPuru_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_PuruPuru_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_PuruPuru_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_PuruPuru_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_PuruPuru_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_Sniper_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_Sniper_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_Sniper_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_Sniper_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Weapon_Upgrade_Sniper_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Weapon_Upgrade_Sniper_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "CatJam.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "CatJam.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/SlimeSpawner.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "SlimeSpawner",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite27",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "MusicVolumeIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "MusicVolumeIcon.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "killcount.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "killcount.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite28",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite29",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite30",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite31",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite32",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite33.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite33",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite34.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite34",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite35",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite36",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite37",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite38",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite39",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bullet.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Bullet.png\"}",
+        "name": "Bullet",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite40",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite41.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite41",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite42.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite42",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite43.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite43",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite44",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite45.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite45",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite46.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite46",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite47.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite47",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiBounce.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiBounce",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiBounce2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiBounce2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiBounce3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiBounce3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiBounce4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiBounce4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiBounce5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiBounce5",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiBounce6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiBounce6",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiBounce7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiBounce7",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NamiRadius.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"NamiRadius.png\",\"extension\":\".png\"}",
+        "name": "NamiRadius.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiRadius.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NamiRadius.png2.png\"}",
+        "name": "NamiRadius.png2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NamiRadius.png4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NamiRadius.png4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite48",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "StartButton2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "StartButton2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/StartButton3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "StartButton3.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/StartButton4.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "StartButton4.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Title.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite49.png\"}",
+        "name": "NewSprite49",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite50",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Coots_Intro.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Coots_Intro.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Survive.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Survive.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Toggle_Off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Toggle_Off.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Toggle Switch/pixel art/e88334de6c9ad921b4719b34a512d70b923fcf36112610a7f9ed4d56aa77cfd0_Square White Toggle_Off.png",
+          "name": "Square White Toggle_Off.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Toggle_On.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Toggle_On.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Toggle Switch/pixel art/ebdb63dcba9c53d41a0a468ba28929bf88b1b8698d672fc17568723fe1fbc3cc_Square White Toggle_On.png",
+          "name": "Square White Toggle_On.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Quit_Button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Quit_Button.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Restart_Button_Hover.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Restart_Button_Hover.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Restart_Button_Pressed.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Restart_Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Quit_Button1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Quit_Button1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Quit_Button_Pressed.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Quit_Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Quit_Button_Hover.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Quit_Button_Hover.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Blip.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 14\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.05,\\\"sustainPunch\\\":0,\\\"decay\\\":0.03,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":197.7678402233876,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.49,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":60,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"Blip\"}}",
+        "name": "Blip",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NamiBounceSFX.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 14\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0.01249364522380958,\\\"sustain\\\":0.04,\\\"sustainPunch\\\":0,\\\"decay\\\":0.15293314284921355,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":156.54743563872344,\\\"frequencySweep\\\":55.58277900508377,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":40,\\\"squareDutySweep\\\":-5,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":17800,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"NamiBounceSFX\"}}",
+        "name": "NamiBounceSFX",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NiceSpawner.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NiceSpawner",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite51.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite51",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/CootsHurt.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 14\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.05,\\\"sustainPunch\\\":10,\\\"decay\\\":0.1,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":900,\\\"frequencySweep\\\":-300,\\\"frequencyDeltaSweep\\\":-500,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"breaker\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":21200,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"CootsHurt\"},\"localFilePath\":\"assets/CootsHurt.wav\"}",
+        "name": "CootsHurt",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite52.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite52",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite53.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite53",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite54.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite54",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite55.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite55",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite56.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite56",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite57.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite57",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite58.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite58",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite59.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite59",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/New sound effect.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 14\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.09,\\\"sustainPunch\\\":20,\\\"decay\\\":0.79584137228221,\\\"tremoloDepth\\\":24,\\\"tremoloFrequency\\\":79,\\\"frequency\\\":8430.783526173518,\\\"frequencySweep\\\":-4700,\\\"frequencyDeltaSweep\\\":-2800,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"brownnoise\\\",\\\"interpolateNoise\\\":false,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1.8,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"}}",
+        "name": "New sound effect",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Beep.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 14\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.06,\\\"sustainPunch\\\":0,\\\"decay\\\":0,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":488.17966097650185,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":65,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"Beep\"}}",
+        "name": "Beep",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "YouDied.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "YouDied.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite60.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite60",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite61.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite61",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite62.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite62",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite63.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite63",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite64.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite64",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite65.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite65",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite66.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite66",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Death (1).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Death (1).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Food_Soba.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Food_Soba.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite67.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite67",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite68.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite68",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite69.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite69",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite70.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite70",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite71.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite71",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite72.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite72",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/WindUp.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WindUp",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/WindUp2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WindUp2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/WindUp3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WindUp3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Shake.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Shake",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Slam.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Slam",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Slam2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Slam2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Slam3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Slam3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Slam4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Slam4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Victory.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Victory.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "YouWin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "YouWin.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BlueGem1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BlueGem1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/RedGem1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "RedGem1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Levelup.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Levelup.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite73.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite73.png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Plug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Plug.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Coot_Survivors_Itch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coot_Survivors_Itch.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-192.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-96.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-48.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-windowSplashScreenAnimatedIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-windowSplashScreenAnimatedIcon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-20.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/battlefield"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/startscreen"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/weapons"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/enemies"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/newweapons"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/newpassives"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/weaponupgrades"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/drawshockwaveeffect"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/createmultiplecopiesofobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritetoggleswitch"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/orbitingobjects"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/timeformatter"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/ysort"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/threedflip"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectspawner"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/roombasedcameramovement"
+    }
+  ],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/levelup"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/ottomatondead"
+    }
+  ],
+  "externalSourceFiles": []
+}

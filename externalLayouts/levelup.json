@@ -1,0 +1,81 @@
+{
+  "associatedLayout": "Battlefield",
+  "name": "LevelUp",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": true,
+      "name": "LevelUpScreen",
+      "persistentUuid": "4c7e4d31-3148-47c2-806d-a6c6db3c30fb",
+      "sealed": true,
+      "width": 0,
+      "x": 320,
+      "y": 180,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "name": "GemRain",
+      "persistentUuid": "efa58489-cca0-4ea1-9d9c-6bca3a233e9d",
+      "width": 0,
+      "x": 145,
+      "y": -46,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "name": "GemRain2",
+      "persistentUuid": "e9f2d78e-469c-467a-a080-ecc38b1a02a2",
+      "width": 0,
+      "x": 324,
+      "y": -47,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "name": "GemRain3",
+      "persistentUuid": "1ea45532-4c73-4887-877a-b1e06092cae7",
+      "width": 0,
+      "x": 489,
+      "y": -48,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 1.2455500692651285,
+    "windowMask": false
+  }
+}

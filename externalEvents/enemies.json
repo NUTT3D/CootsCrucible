@@ -1,0 +1,2620 @@
+{
+  "associatedLayout": "Battlefield",
+  "lastChangeTimeStamp": 0,
+  "name": "Enemies",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Flash::Flash::IsFlashing"
+          },
+          "parameters": [
+            "Enemies",
+            "Flash",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Enemies",
+            "\"255;255;255\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Flash::Flash::IsFlashing"
+          },
+          "parameters": [
+            "Enemies",
+            "Flash",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "EnemyHit",
+            "3",
+            "",
+            "20",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Enemies",
+            "Enemies",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Aura Stuff",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "Enemies",
+      "conditions": [],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemies",
+                "ChestSuck",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "Enemies",
+                "ChestHole.CenterX()",
+                "ChestHole.CenterY()",
+                "200",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemies",
+                "NewShapePainter",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Lud",
+                "Health",
+                "200",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Aiden",
+                "Health",
+                "200",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Nick",
+                "Health",
+                "200",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Slime",
+                "Health",
+                "200",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "YoutubeFrog",
+                "Health",
+                "200",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemies",
+                "PuruPuruAura",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "PuruPuruAura",
+                    "\"DamageInterval\"",
+                    ">=",
+                    "1.1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Health",
+                    "Variable(PuruPuruDamage)*Coots.Variable(AllDamage)",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "\"255;10;10\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyHit",
+                    "3",
+                    "",
+                    "20",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemies",
+                "Bullet",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "isSniperPiercing",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Health",
+                    "Variable(SniperDamage)*Coots.Variable(AllDamage)",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "\"255;10;10\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "isSniperPiercing",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Health",
+                    "Variable(SniperDamage)*Coots.Variable(AllDamage)",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "\"255;10;10\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemies",
+                "NamiExplodes",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Enemies",
+                "Health",
+                "30",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Enemies",
+                "\"255;10;10\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "Enemies",
+                "Flash",
+                "0.2",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Gem Drops",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "Enemies",
+      "conditions": [],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::Health"
+              },
+              "parameters": [
+                "Enemies",
+                "Health",
+                "<=",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Drop",
+                    "=",
+                    "RandomInRange(0,1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyDeath",
+                    "Enemies.CenterX()",
+                    "Enemies.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "KillCount",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Drop",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "DropColor",
+                    "=",
+                    "RandomInRange(0,100)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "DropColor",
+                        "<=",
+                        "90"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BlueGem",
+                        "Enemies.CenterX()",
+                        "Enemies.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "Drop",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "DropColor",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "DropColor",
+                        ">=",
+                        "91"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "DropColor",
+                        "<=",
+                        "98"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "RedGem",
+                        "Enemies.CenterX()",
+                        "Enemies.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "Drop",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "DropColor",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "DropColor",
+                        ">=",
+                        "99"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "GoldGem",
+                        "Enemies.CenterX()",
+                        "Enemies.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "Drop",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "DropColor",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Drop",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Drop",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "DropColor",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "EnemySpawning",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            "<",
+            "90"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetSpawnPeriod"
+          },
+          "parameters": [
+            "LudSpawner",
+            "ObjectSpawner",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetMaxQuantity"
+          },
+          "parameters": [
+            "LudSpawner",
+            "ObjectSpawner",
+            "3",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+          },
+          "parameters": [
+            "LudSpawner",
+            "ObjectSpawner",
+            "Lud",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Lud",
+            "=",
+            "Coots.ZOrder()+1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "90"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+          },
+          "parameters": [
+            "LudSpawner",
+            "ObjectSpawner",
+            "Lud",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Lud",
+            "=",
+            "Coots.ZOrder()+1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+          },
+          "parameters": [
+            "SlimeSpawner",
+            "ObjectSpawner",
+            "Slime",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::SetSpawnPeriod"
+              },
+              "parameters": [
+                "LudSpawner",
+                "ObjectSpawner",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::SetMaxQuantity"
+              },
+              "parameters": [
+                "LudSpawner",
+                "ObjectSpawner",
+                "5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::SetMaxQuantity"
+              },
+              "parameters": [
+                "SlimeSpawner",
+                "ObjectSpawner",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::SetSpawnPeriod"
+              },
+              "parameters": [
+                "SlimeSpawner",
+                "ObjectSpawner",
+                "1",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "180"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetMaxQuantity"
+          },
+          "parameters": [
+            "SlimeSpawner",
+            "ObjectSpawner",
+            "3",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetSpawnPeriod"
+          },
+          "parameters": [
+            "LudSpawner",
+            "ObjectSpawner",
+            ".5",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "220"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "CreateMultipleCopiesOfObject::CreateMultipleCopiesOfObject"
+          },
+          "parameters": [
+            "",
+            "YoutubeFrog",
+            "34",
+            "1",
+            "1272",
+            "-341",
+            "0",
+            "16",
+            "\"Frogs\"",
+            "\"\"",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "220"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            "<",
+            "359"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceAL"
+          },
+          "parameters": [
+            "YoutubeFrog",
+            "180",
+            "20",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "300"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+          },
+          "parameters": [
+            "NickSpawner",
+            "ObjectSpawner",
+            "Nick",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetSpawnPeriod"
+          },
+          "parameters": [
+            "NickSpawner",
+            "ObjectSpawner",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetMaxQuantity"
+          },
+          "parameters": [
+            "NickSpawner",
+            "ObjectSpawner",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Nick",
+            "=",
+            "Coots.ZOrder()+1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "360"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetSpawnPeriod"
+          },
+          "parameters": [
+            "Aiden",
+            "ObjectSpawner",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetMaxQuantity"
+          },
+          "parameters": [
+            "Aiden",
+            "ObjectSpawner",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+          },
+          "parameters": [
+            "AidenSpawner",
+            "ObjectSpawner",
+            "Aiden",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Aiden",
+            "=",
+            "Coots.ZOrder()+1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "360"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceAL"
+          },
+          "parameters": [
+            "YoutubeFrog",
+            "0",
+            "20",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CreateMultipleCopiesOfObject::CreateMultipleCopiesOfObject"
+              },
+              "parameters": [
+                "",
+                "YoutubeFrog",
+                "34",
+                "1",
+                "-610",
+                "-341",
+                "0",
+                "16",
+                "\"Frogs\"",
+                "\"\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlipX"
+              },
+              "parameters": [
+                "YoutubeFrog",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "480"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Ottomaton",
+            "317",
+            "-363",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayTime\"",
+            ">",
+            "600"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Enemies",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Spawners",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "YouDied",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeSoundVolume"
+          },
+          "parameters": [
+            "",
+            "2",
+            "0",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "Victory.mp3",
+            "",
+            "80",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Dead\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "PauseFade",
+            "0",
+            "0",
+            "\"Dead\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Opacity"
+          },
+          "parameters": [
+            "PauseFade",
+            "=",
+            "100"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetSize"
+          },
+          "parameters": [
+            "PauseFade",
+            "SceneWindowWidth()",
+            "SceneWindowHeight()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "PauseFade",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "YouWin",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 250,
+        "g": 255,
+        "r": 102,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Ludwig",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Lud",
+            "ChestSuck",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "isNamiSpawned",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "Lud",
+                "Coots.CenterX()",
+                "Coots.CenterY()",
+                "40",
+                "0"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Lud",
+                    "<",
+                    "Coots.CenterX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                  },
+                  "parameters": [
+                    "Lud",
+                    "ThreeDFlip",
+                    "yes",
+                    "250",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Lud",
+                    ">",
+                    "Coots.CenterX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                  },
+                  "parameters": [
+                    "Lud",
+                    "ThreeDFlip",
+                    "500",
+                    "250",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "isNamiSpawned",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "Lud",
+                "NamiStatue.CenterX()",
+                "NamiStatue.CenterY()",
+                "40",
+                "0"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Lud",
+                    ">",
+                    "NamiStatue.CenterX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                  },
+                  "parameters": [
+                    "Lud",
+                    "ThreeDFlip",
+                    "yes",
+                    "250",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Lud",
+                    ">",
+                    "NamiStatue.CenterX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+                  },
+                  "parameters": [
+                    "Lud",
+                    "ThreeDFlip",
+                    "500",
+                    "250",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "Lud",
+                    "NamiStatue",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsOnScreen::InOnScreen::IsOnScreen"
+          },
+          "parameters": [
+            "Lud",
+            "InOnScreen",
+            "25",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "isNamiSpawned",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Lud",
+            "Coots.CenterX()",
+            "Coots.CenterY()",
+            "80",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 82,
+        "g": 253,
+        "r": 102,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Slime",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Slime",
+            "ChestSuck",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Slime",
+            "Coots.CenterX()",
+            "Coots.CenterY()",
+            "30",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsOnScreen::InOnScreen::IsOnScreen"
+          },
+          "parameters": [
+            "Slime",
+            "InOnScreen",
+            "25",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Slime",
+            "Coots.CenterX()",
+            "Coots.CenterY()",
+            "80",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Slime",
+            "<",
+            "Coots.CenterX()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+          },
+          "parameters": [
+            "Slime",
+            "ThreeDFlip",
+            "yes",
+            "250",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Slime",
+            ">",
+            "Coots.CenterX()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+          },
+          "parameters": [
+            "Slime",
+            "ThreeDFlip",
+            "500",
+            "250",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "YoutubeFrogs",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "YoutubeFrog",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "YoutubeFrog",
+            "Block",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "YoutubeFrog",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Nick",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Nick",
+            "ChestSuck",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Nick",
+            "Coots.CenterX()",
+            "Coots.CenterY()",
+            "50",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Nick",
+            "<",
+            "Coots.CenterX()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+          },
+          "parameters": [
+            "Nick",
+            "ThreeDFlip",
+            "yes",
+            "250",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Nick",
+            ">",
+            "Coots.CenterX()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+          },
+          "parameters": [
+            "Nick",
+            "ThreeDFlip",
+            "500",
+            "250",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Aiden",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Aiden",
+            "ChestSuck",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Aiden",
+            "Coots.CenterX()",
+            "Coots.CenterY()",
+            "30",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsOnScreen::InOnScreen::IsOnScreen"
+          },
+          "parameters": [
+            "Aiden",
+            "InOnScreen",
+            "25",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Aiden",
+            "Coots.CenterX()",
+            "Coots.CenterY()",
+            "80",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Aiden",
+            "<",
+            "Coots.CenterX()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+          },
+          "parameters": [
+            "Aiden",
+            "ThreeDFlip",
+            "yes",
+            "250",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Aiden",
+            ">",
+            "Coots.CenterX()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ThreeDFlip::ThreeDFlip::FlipTo"
+          },
+          "parameters": [
+            "Aiden",
+            "ThreeDFlip",
+            "500",
+            "250",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Ottamoton",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "PosY"
+          },
+          "parameters": [
+            "Ottomaton",
+            "=",
+            "187"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Ottomaton",
+            "317",
+            "187",
+            "30",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "Ottomaton",
+            ">=",
+            "187"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "Ottomaton"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Ottomaton",
+                "\"WindUp\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimationName"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"WindUp\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimationEnded2"
+          },
+          "parameters": [
+            "Ottomaton"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"Shake\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+          },
+          "parameters": [
+            "Ottomaton",
+            "ShakeObject_PositionAngle",
+            "2",
+            "3",
+            "0",
+            "0",
+            "0.08",
+            "no",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimationName"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"Shake\""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "ShakeObject::ShakeObject_PositionAngle::IsShaking"
+          },
+          "parameters": [
+            "Ottomaton",
+            "ShakeObject_PositionAngle",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"Slam\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimationName"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"Slam\""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "Ottomaton",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "NewShapePainter",
+                "Ottomaton.PointX(\"Slam1\")",
+                "Ottomaton.PointY(\"Slam1\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "NewShapePainter",
+                "Ottomaton.PointX(\"Slam2\")",
+                "Ottomaton.PointY(\"Slam2\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect",
+                "",
+                "80",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimationEnded2"
+              },
+              "parameters": [
+                "Ottomaton"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Ottomaton",
+                "\"Rest\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"Rest\"",
+            ">=",
+            "4"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Ottomaton",
+                "\"Idle\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"Rest\"",
+            ">=",
+            "8"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"WindUp\""
+          ]
+        },
+        {
+          "type": {
+            "value": "RemoveObjectTimer"
+          },
+          "parameters": [
+            "Ottomaton",
+            "\"Rest\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::Health"
+          },
+          "parameters": [
+            "Ottomaton",
+            "Health",
+            "<=",
+            "15",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"OttomatonDead\"",
+                "Ottomaton.CenterX()",
+                "Ottomaton.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "OttoDead",
+                "Ottomaton.CenterX()",
+                "Ottomaton.CenterY()",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
